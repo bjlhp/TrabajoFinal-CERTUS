@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo productos - TripleHash</title>
+
+    <!-- Hoja de estilo personalizada -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Estilo de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <!-- Estilo de Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- WhatsApp iniciar convsersación -->
+    <a id="chatWhatsApp" target="_blank" href="https://wa.me/51931238457?text=Hola%20quiero%20comprar%20ya!">
+        <img src="image/recursos/WhatsApp.svg" alt="Iniciar convsersación por WhatsApp">
+    </a>
+
+    <!-- Encabezado -->
+    <header class="text-center bg-dark text-dark p-3">
+        <h1>TripleHash</h1>
+        <h2>Seguridad, calidad y garantía</h2>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacténos</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#ventanaCarrito"><i class="bi bi-cart-fill"></i> Carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ventana Modal del Carrito -->
+    <div class="modal fade" id="ventanaCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="carritoProductos">
+                    <picture>
+                        <img id="imageCarritoVacio" class="img-fluid mx-auto d-block" src="image/recursos/carrito-vacio.jpg" alt="Carrito Vacio">
+                    </picture>
+                    <p class="text-center">Actualmente usted no cuenta con ningún producto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="limpiarCarrito()"><i class="bi bi-stars"></i> Limpiar </button>
+                    <button type="button" class="btn btn-primary"><i class="bi bi-cart-check"></i> Cotizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="container text-center bg-secondary-subtle">
+
+        <!-- Sesiones de contenido -->
+        <section id="catalogo" class="row py-5">
+
+            <!-- 
+
+                AQUÍ AGREGAR LOS PRODUCTOS POR JSON
+
+             -->
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+
+    <footer class="container-fluid bg-dark text-white p-5">
+        <div class="container p-0">
+            <p class="float-end">
+                <a href="#">Volver arriba</a>
+            </p>
+            <p>Creado por Arturo producciones - 2023</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cargar JavaScript personalizado -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

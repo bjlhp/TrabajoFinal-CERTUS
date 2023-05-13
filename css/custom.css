@@ -1,0 +1,54 @@
+#chatWhatsApp{
+    width: 64px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* HEADER */
+header {
+    background-image: url(../image/recursos/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* CARRITO */
+#imageCarritoVacio{
+    width: 60%;
+}
+
+#ventanaCarrito span {
+    font-size: 1em;
+}
+
+#ventanaCarrito .precioDescuento, #ventanaCarrito .precioFinal{
+    font-size: 1em;
+    text-align: right;
+}
+
+/* ARTICULOS */
+article {
+    margin-bottom: 2em;
+}
+
+article > picture > img {
+    max-width: 90% !important;
+    margin-bottom: 1em;
+}
+
+/* PRECIOS */
+.precioOriginal {
+    font-size: 1.5em;
+    color:#4d4d4d;
+    text-decoration: line-through;
+}
+.precioDescuento {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+.precioFinal {
+    font-size: 2em;
+    color: #9c0000;
+    font-weight: bold;
+}
